@@ -17,11 +17,13 @@ pipeline {
   triggers {
         eventTrigger jmespathQuery("zen=='Non-blocking is better than blocking.'")
   }
-  stage('Run maven') {
+  stages {
+    stage('Run maven') {
       steps {
         container('maven') {
           sh 'mvn -version'
         }
       }
+    }  
   }
 }
