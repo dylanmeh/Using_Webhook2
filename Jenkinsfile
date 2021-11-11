@@ -14,6 +14,12 @@ pipeline {
         '''
     }
   }
+
+  triggers {
+        eventTrigger jmespathQuery("repository.url=='https://github.com/dylanmeh/Using_Webhook2'")
+    }
+
+
   stages {
     stage('Run maven') {
       steps {
