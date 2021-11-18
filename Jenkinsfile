@@ -45,6 +45,7 @@ pipeline {
                 	}
               }
           }
+      }  
     stage('Run maven') {
       steps {
         container('maven') {
