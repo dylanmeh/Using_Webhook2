@@ -16,7 +16,7 @@ pipeline {
   }
 
   triggers {
-        eventTrigger jmespathQuery("repository.url=='https://github.com/dylanmeh/Using_Webhook2'")
+        eventTrigger jmespathQuery("repository.full_name=='dylanmeh/Using_Webhook2'")
     }
 
 
