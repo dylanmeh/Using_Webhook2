@@ -44,6 +44,7 @@ pipeline {
                     	echo "Job triggered by something else"
                 	}
               }
+          }
     stage('Run maven') {
       steps {
         container('maven') {
